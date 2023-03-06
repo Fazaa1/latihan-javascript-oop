@@ -8,16 +8,19 @@
 </head>
 <body>
     <script>
-        const eko = {
-            firstName: "Eko"
-            lastName: "Khannedy"
-        };
+        class Person {
 
-        const budi = {
-            namaDepan: "Budi"
-            lastName: "Nugraha"
+            constructor(name) {
+
+                console.info(`Membuat Person ${name}`);
+            }
         }
 
-    </script>
+        const eko = new Person("Eko");
+        console.info(eko);
+
+        const budi = new Person("Budi");
+
+    </script>    
 </body>
 </html>

@@ -19,11 +19,11 @@
         Manager.prototype = Object.create(Employeee.prototype);
 
         Manager.prototype.sayHello = function (name) {
-            console.info(`Hello ${name}, Watashi anime ${name}`)
+            console.info(`Hello ${name}, Watashi anime ${this.name}`)
         }
 
         Employeee.prototype.sayHello = function (name) {
-            console.info(`Hello ${name}, watashi anime ${name}`)
+            console.info(`Hello ${name}, watashi anime ${this.name}`)
 
         }
 

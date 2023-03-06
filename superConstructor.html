@@ -8,29 +8,34 @@
 </head>
 <body>
     <script>
-        class Employe {
+        class Employee {
 
             constructor(firstname) {
-                this.firtname =    firtname ;
+                this.firstname = firstname;
             }
+
             sayHello(name){
-                console.info(`Hello ${name}, my name is employee) ${this.firtname}`);
+                console.info(`Hello ${name}, my name is employee ${this.firstname}`);
             }
         }
-        class Manager extends Employe {
-            constructor (firtname, lastname) {
-                super(firtname);
+
+        class Manager extends Employee {
+               
+            constructor(firstname, lastname) {
+                super(firstname)
                 this.lastname = lastname;
             }
+
             sayHello(name) {
-                    console.info(`Hello ${name}, my name is manager ${this.firtname}`);
+                    console.info(`Hello ${name}, my name is manager ${this.firstname}`);
             }
         }
-        const eko = new Employe("Eko");
-        eko.sayHello('joko');
 
-        const budi = new Manager("Budi");
-        budi.sayHello('joko');
+        const budi = new Employee("Budi");
+        budi.sayHello('Joko');
+
+        const eko = new Manager("Eko", "Jamal");
+        eko.sayHello('Joko');
 
 console.info(eko);
 console.info(budi);
