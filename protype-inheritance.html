@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Employeee(name) {
+            this.name = name;
+        }
+
+        function Manager(name) {
+            this.name = name;
+
+        }
+        Manager.prototype = Object.create(Employe.prototype);
+
+        Manager.prototype.sayHello = function (name) {
+            console.info(`Hello ${name}, Watashi anime ${name}`)
+        }
+
+        const Employeee = new Employeee("Budi")
+        Employe.sayHello("Joko");
+        const Manager = new manager("Eko")
+        Manager.sayHello
+    </script>
+</body>
+</html>
