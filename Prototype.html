@@ -22,12 +22,15 @@
     }
 
     Person.prototype.run = function () {
-
+    console.info(`${this.firstName} is running`);
+    }
     const eko = new Person("Eko", "Khannedy");
     const budi = new Person("budi", "nugraha");
-    }
-    console.log(Eko);
+    console.log(eko);
     console.log(budi);
+
+    eko.sayBye();
+    eko.run();
   </script>  
 </body>
 </html>
